@@ -83,7 +83,7 @@ button{
 .weather-view-container{
     width: 100%;
     height: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;

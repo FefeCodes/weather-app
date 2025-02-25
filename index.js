@@ -44,12 +44,16 @@ function collectWeatherReport(city){
 }
 
 function printWeatherOnUI(data){
+
+    weatherViewContainer.style.display = "none"
+
     let temperature = data.main.temp
     let humidity = data.main.humidity
     let nameOfCity = data.name
     let conditions = data.weather[0].description
 
     weatherViewContainer.innerHTML = ``
+
 
     let cityNameContainer = document.createElement("div")
 cityNameContainer.classList.add("city-name-container")
@@ -99,4 +103,9 @@ leftContainer.append(temperatureContainer)
 rightContainer.append(conditionContainer, humidityContainer)
 weatherResultContainer.append(leftContainer, rightContainer)
 weatherViewContainer.append(cityNameContainer, weatherResultContainer)
+
+if(weatherViewContainer.innerHTML.trim() !== ""){
+    weatherViewContainer.style.display = "block"
+}
+
 }
