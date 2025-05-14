@@ -186,3 +186,193 @@ button{
     font-weight: 600;
     color: #fff;
 }
+
+@media screen and (max-width: 450px){
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 2rem;
+    background-image: url("./images/normal.jpeg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.heading{
+    width: fit-content;
+    height: auto;
+}
+
+.heading h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.weather-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* align-items: center; */
+    row-gap: 2rem;
+}
+
+.form-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #787878;
+    background-color: #fff;
+    border-radius: 4rem;
+    padding: 0.8rem;
+}
+
+input{
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 0.4rem;
+}
+
+button{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    color: #000;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.weather-view-container{
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.city-name-container{
+    width: 100%;
+    height: auto;
+}
+
+.city-name-container h1{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.weather-result-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 1rem;
+}
+
+.left-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.temperature-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.temperature-container p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ededed;
+}
+
+.temperature-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.right-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0rem;
+}
+
+.condition{
+    width: 100%;
+    height: auto;
+}
+
+.condition h3{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.humidity-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    column-gap: 0.2rem;
+}
+
+.humidity-container p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.humidity-container h5{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+}

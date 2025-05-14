@@ -105,7 +105,7 @@ weatherResultContainer.append(leftContainer, rightContainer)
 weatherViewContainer.append(cityNameContainer, weatherResultContainer)
 
 if(weatherViewContainer.innerHTML.trim() !== ""){
-    weatherViewContainer.style.display = "block"
+    weatherViewContainer.style.display = "flex"
 }
 
 }
